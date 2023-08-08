@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Equipment(models.Model):
     """Equipment model class"""
-    stylist = models.ForeignKey(User, on_delete=models.CASCADE)
+    stylist = models.ForeignKey(User, on_delete=models.CASCADE, related_name='tools_assigned')
     type = models.ForeignKey("EquipmentType", on_delete=models.CASCADE, related_name='current_equipments')
     manufacturer = models.CharField(max_length=75)
     cost = models.DecimalField(decimal_places=2, max_digits=6)
