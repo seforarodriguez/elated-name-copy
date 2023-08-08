@@ -11,6 +11,6 @@
     "python.testing.cwd": "tests",
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
-        "--django-settings-module=levelup.settings",
+        "--django-settings-module=elatedmane.settings",
     ],
 }
